@@ -117,11 +117,6 @@ const NewArrivals = () => {
 
     const updateScrollButtons = () => {
         const container = scrollRef.current;
-        console.log({
-            scrollLeft: container.scrollLeft,
-            clientWidth: container.clientWidth,
-            containerScrollWidth: container.scrollWidth,
-        });
 
         if (container) {
             const leftScroll = container.scrollLeft;
