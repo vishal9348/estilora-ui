@@ -1,4 +1,6 @@
 import Hero from "../component/Layout/Hero"
+import FeatureCollection from "../component/Products/FeatureCollection"
+import FeatureSection from "../component/Products/FeatureSection"
 import GenderCollectionSection from "../component/Products/GenderCollectionSection"
 import NewArrivals from "../component/Products/NewArrivals"
 import ProductDetails from "../component/Products/ProductDetails"
@@ -68,13 +70,15 @@ const Home = () => {
             </h2>
             <ProductDetails />
 
-            <div className="container mx-auto">
+            <div className="container mx-auto p-10">
                 <h2 className="text-3xl text-center font-bold">
                     Top Wears for Women
                 </h2>
 
                 <ProductGrid products={placeholderProducts} />
             </div>
+            <FeatureCollection />
+            <FeatureSection />
         </div>
     )
 }

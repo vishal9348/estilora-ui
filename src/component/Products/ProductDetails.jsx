@@ -36,7 +36,7 @@ const ProductDetails = () => {
             _id: 2,
             name: "Stylish T-Shirt",
             price: 50,
-            images: [{ url: "https://picsum.photos/500/500?random=10" }],
+            images: [{ url: "https://picsum.photos/500/500?random=11" }],
         },
         {
             _id: 3,
@@ -61,6 +61,18 @@ const ProductDetails = () => {
             name: "Stylish T-Shirt",
             price: 50,
             images: [{ url: "https://picsum.photos/500/500?random=14" }],
+        },
+        {
+            _id: 7,
+            name: "Stylish T-Shirt",
+            price: 50,
+            images: [{ url: "https://picsum.photos/500/500?random=15" }],
+        },
+        {
+            _id: 8,
+            name: "Stylish T-Shirt",
+            price: 50,
+            images: [{ url: "https://picsum.photos/500/500?random=16" }],
         },
     ]
 

@@ -8,7 +8,7 @@ const ProductGrid = ({ products }) => {
                     key={index}
                     to={`/product/${product._id}`}
                     className="block">
-                    <div className="bg-white p-4 rounded-lg">
+                    <div className="bg-white rounded-lg">
                         <div className="w-full h-96 mb-4">
                             <img
                                 src={product.images[0].url}
