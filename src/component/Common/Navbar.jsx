@@ -10,6 +10,8 @@ const Navbar = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [navDrawerOpen, setNavDrawerOpen] = useState(false);
 
+    
+
     const toggleNavDrawer = () => {
         setNavDrawerOpen(!navDrawerOpen);
     }

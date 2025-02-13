@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 
-const EditProduct = () => {
+const AddProduct = () => {
+
     const [productData, setProductData] = useState({
         name: '',
         description: '',
@@ -15,14 +16,7 @@ const EditProduct = () => {
         collections: "",
         material: "",
         gender: '',
-        images: [
-            {
-                url: "https://picsum.photos/150?random=1",
-            },
-            {
-                url: "https://picsum.photos/150?random=2",
-            },
-        ],
+        images: [],
     });
 
     const handleChange = (e) => {
@@ -43,11 +37,13 @@ const EditProduct = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(productData);
-    }
+        // Here you would typically send the data to your server/API
+        // Example: axios.post("/api/products", productData);
+    };
 
     return (
         <div className="max-w-5xl mx-auto p-6 shadow-md rounded-md">
-            <h2 className="text-3xl font-bold mb-6">Edit Product</h2>
+            <h2 className="text-3xl font-bold mb-6">Add Product</h2>
 
             <form onSubmit={handleSubmit}>
                 {/* name */}
@@ -192,6 +188,7 @@ const EditProduct = () => {
                     <label className="block font-semibold mb-2">Upload Image</label>
                     <input
                         type="file"
+                        multiple
                         onChange={handleImageUpload}
                     />
 
@@ -215,11 +212,11 @@ const EditProduct = () => {
                 <button className="w-full bg-green-500 text-white py-2 rounded-md hover:bg-green-600 transition-colors"
                     type="submit"
                 >
-                    Update Product
+                    Add Product
                 </button>
             </form>
         </div>
     )
 }
 
-export default EditProduct
+export default AddProduct
